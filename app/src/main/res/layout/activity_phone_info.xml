@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_telephony"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5DADE2"
+    tools:context="com.gulbalasalamov.phoneinfodemo.PhoneInfo">
+
+    <TextView
+        android:id="@+id/simNumarasi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sim kart numarası: "
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/telefonNumarasi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/sebekeBilgisi"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/sebekeBilgisi"
+        android:layout_below="@+id/simNumarasi"
+        android:layout_marginTop="46dp"
+        android:text="Telefon numarası: "
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/sebekeBilgisi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/simNumarasi"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/simNumarasi"
+        android:layout_below="@+id/telefonNumarasi"
+        android:layout_marginTop="42dp"
+        android:text="Şebeke bilgisi: "
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/imeiNumarasi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/sebekeBilgisi"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/sebekeBilgisi"
+        android:layout_below="@+id/sebekeBilgisi"
+        android:layout_marginTop="147dp"
+        android:text="IMEI numarası: "
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/simUlkeKodu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/sebekeBilgisi"
+        android:layout_marginTop="55dp"
+        android:text="Şebeke ülke kodu: "
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/setTelNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/setSimNo"
+        android:layout_alignStart="@+id/setSimNo"
+        android:layout_alignTop="@+id/telefonNumarasi"
+        android:text=""
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/setSebekeBilgisi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/sebekeBilgisi"
+        android:layout_alignLeft="@+id/setTelNo"
+        android:layout_alignStart="@+id/setTelNo"
+        android:text=""
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/setUlkeKodu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/setSebekeBilgisi"
+        android:layout_alignStart="@+id/setSebekeBilgisi"
+        android:layout_alignTop="@+id/simUlkeKodu"
+        android:text=""
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/setImei"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/setUlkeKodu"
+        android:layout_alignStart="@+id/setUlkeKodu"
+        android:layout_alignTop="@+id/imeiNumarasi"
+        android:text=""
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/setSimNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/simNumarasi"
+        android:layout_marginLeft="46dp"
+        android:layout_marginStart="46dp"
+        android:layout_toEndOf="@+id/simNumarasi"
+        android:layout_toRightOf="@+id/simNumarasi"
+        android:text=""
+        android:textSize="17sp" />
+</RelativeLayout>
